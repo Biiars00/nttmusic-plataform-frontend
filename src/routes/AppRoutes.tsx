@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { ProtectedRoute } from './ProtectedRoute';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
@@ -9,6 +9,7 @@ import Playlists from '../pages/Playlists';
 export function AppRoutes() {
   return (
     <Routes>
+      <Route path="/" element={<Navigate to="/user/login" replace />} />
       <Route path="/user/login" element={<Login />} />
       <Route path="/user/sign-up" element={<Register />} />
       <Route path="/music/album" element={<ProtectedRoute><Albums /></ProtectedRoute>} />
