@@ -1,46 +1,116 @@
-# Getting Started with Create React App
+# 🎵 NTT Music - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Interface web do **NTT Music**, uma plataforma de streaming que permite visualizar álbuns, músicas de cada álbum, criar playlists, adicionar músicas à playlist, e muito mais, com integração à [Deezer Public API](https://developers.deezer.com/api) e [backend próprio](https://github.com/Biiars00/nttmusic-plataform) em Node.js/Typescript + Firebase.
 
-## Available Scripts
+[Deploy na Vercel](https://nttmusic-plataform-frontend.vercel.app)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Índice
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Funcionalidades](#funcionalidades)
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação](#instalação)
+- [Scripts disponíveis](#scripts-disponíveis)
+- [Estrutura de Diretórios](#estrutura-de-diretórios)
+- [Deploy na Vercel](#deploy-na-vercel)
+- [Backend](#backend)
+- [Licença](#licença)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+## Tecnologias utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React** – Framework para construção da interface.
+- **TypeScript** – Tipagem estática.
+- **Axios** – Para comunicação com APIs.
+- **React Router** – Navegação entre páginas.
+- **TailwindCSS** – Estilização moderna e utilitária.
+- **Vercel** – Hospedagem do frontend.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Funcionalidades
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Cadastro de usuário
+- Login de usuário
+- Busca de álbuns da API Deezer
+- Listagem de faixas do álbum
+- Criação de playlists
+- Adição de músicas à playlist
+- Visualização de todas as playlists
+- Atualização do nome da playlist
+- Exclusão de música da playlist
+- Exclusão de playlist
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Pré-requisitos
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Antes de começar, você precisará ter os seguintes softwares instalados:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Node.js](https://nodejs.org) (v18 ou superior)
+- [npm](https://www.npmjs.com) (gerenciador de pacotes do Node.js)
+- Variáveis de ambiente.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Instalação
 
-## Learn More
+1. Clone o repositório:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+git clone https://github.com/*seu-usuario*/ntt-music-frontend.git
+cd ntt-music-frontend
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Instale as dependências:
+
+```bash
+npm install
+```
+
+3. Crie o arquivo `.env` com as variáveis:
+
+```
+REACT_APP_API_URL_PROD_BACK=
+REACT_APP_API_URL_DEV_BACK=
+PORT=
+```
+
+4. Execute em modo desenvolvimento:
+
+```bash
+npm run dev
+```
+
+## Scripts disponíveis
+
+`npm start` – Inicia em modo desenvolvimento
+
+`npm build` – Gera a build de produção
+
+## Estrutura de Diretórios
+
+```bash
+src/
+├── api/         
+├── components/      
+├── pages/          
+├── routes/          
+├── services/                       
+├── styles/          
+├── App.tsx/          
+└── index.tsx         
+```
+
+## Deploy na Vercel
+
+Este projeto está publicado em: [NttMusic Plataform](https://nttmusic-plataform-frontend.vercel.app)
+
+## Backend
+- Documentação:  [Swagger](https://nttmusic-plataform.onrender.com/docs)
+- Deploy: [API](https://nttmusic-plataform.onrender.com)
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](https://opensource.org/license/mit).
+
+#### Desenvolvido por [Beatriz Ribeiro](https://github.com/Biiars00) ❤️
