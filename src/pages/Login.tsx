@@ -20,6 +20,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const token = await login(formData);
+
       if (!token) {
         toast.error('Erro ao fazer login');
         return;
@@ -36,7 +37,9 @@ const Login = () => {
   return (
     <>
     <div className="flex flex-col min-h-screen">
-      <Header />
+      <Header 
+        nameLogo="🎵 NttMusic"
+      />
 
       <div className="flex-1 flex justify-center items-center">
         <Form 
